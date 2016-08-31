@@ -1,0 +1,19 @@
+[
+  {
+    "mark": "书签0",
+    "href": "baitiao.jd.com"
+  },
+  {
+    "mark": "书签目录1",
+    "href": "github.com/lvvlan",
+    "child": [
+      {
+        "mark": "书签1",
+        "href": "www.baidu.com"
+      },{
+        "mark": "书签2",
+        "href": "www.google.com"
+      }
+    ]
+  }
+]
