@@ -34,7 +34,8 @@ module.exports = {
         new webpack.optimize.CommonsChunkPlugin({
             names: ['react', 'jquery']
         })
-    ]
+    ],
+    watch: true
 };
 
 /*

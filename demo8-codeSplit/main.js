@@ -11,3 +11,11 @@ require.ensure(["./a"], function (require){
     document.write("<h1>"+content+"</h1>");
     document.close();
 });
+
+require.ensure(["./b1"], function (require){    //仅加载
+    require('./b1');    //真正的执行
+});
+require.ensure(["./b2"], function (require){
+    var b4 = require('react');
+    require('./b3');
+});

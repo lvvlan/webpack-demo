@@ -109,5 +109,13 @@
 	    document.close();
 	});
 
+	__webpack_require__.e/* nsure */(2, function (require){    //仅加载
+	    __webpack_require__(2);    //真正的执行
+	});
+	__webpack_require__.e/* nsure */(3, function (require){
+	    var b4 = __webpack_require__(4);
+	    __webpack_require__(37);
+	});
+
 /***/ }
 /******/ ]);

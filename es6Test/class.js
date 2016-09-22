@@ -23,21 +23,26 @@ var p1 = new Person('lemonleo', 18);
 p1.showName();
 
 class NewPerson extends Person{
-    constructor(x, y, sex){
+    constructor(x, y, sex, job){
         super(x, y);
 
         this.sex = sex;
+        this.job = job;
     }
 
     showSex(){
-        console.log(`sex: ${this.sex}`);
+        console.log(`我是NewPerson sex: ${this.sex} name: ${this.name}`);
+    }
+    showName(){
+        console.log(`job: ${this.job}`);
+        super.showName(`name: ${this.name}`);
     }
 }
 
-let p2 = new NewPerson('newLemonleo', '20', 'boy');
-p2.showName();
+let p2 = new NewPerson('newLemonleo', '20', 'boy', '前端工程师');
+//p2.showName();
 //console.log(p2);
-
+p2.showSex();
 
 class Foo{
     constructor (){}

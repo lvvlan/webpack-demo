@@ -92,29 +92,36 @@
 	var NewPerson = function (_Person) {
 	    _inherits(NewPerson, _Person);
 
-	    function NewPerson(x, y, sex) {
+	    function NewPerson(x, y, sex, job) {
 	        _classCallCheck(this, NewPerson);
 
 	        var _this = _possibleConstructorReturn(this, (NewPerson.__proto__ || Object.getPrototypeOf(NewPerson)).call(this, x, y));
 
 	        _this.sex = sex;
+	        _this.job = job;
 	        return _this;
 	    }
 
 	    _createClass(NewPerson, [{
 	        key: 'showSex',
 	        value: function showSex() {
-	            console.log('sex: ' + this.sex);
+	            console.log('我是NewPerson sex: ' + this.sex + ' name: ' + this.name);
+	        }
+	    }, {
+	        key: 'showName',
+	        value: function showName() {
+	            console.log('job: ' + this.job);
+	            _get(NewPerson.prototype.__proto__ || Object.getPrototypeOf(NewPerson.prototype), 'showName', this).call(this, 'name: ' + this.name);
 	        }
 	    }]);
 
 	    return NewPerson;
 	}(Person);
 
-	var p2 = new NewPerson('newLemonleo', '20', 'boy');
-	p2.showName();
+	var p2 = new NewPerson('newLemonleo', '20', 'boy', '前端工程师');
+	//p2.showName();
 	//console.log(p2);
-
+	p2.showSex();
 
 	var Foo = function () {
 	    function Foo() {

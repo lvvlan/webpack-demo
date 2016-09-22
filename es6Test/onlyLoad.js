@@ -48,31 +48,33 @@
 
 	__webpack_require__(1);
 
-	/**
-	 * Des
-	 * Created by luowei5 on 2016/8/26.
-	 * E-mail luowei5@jd.com
-	 * Update 2016/8/26
-	 */
-	//const React = require("react");
-	//const ReactDOM = require("react-dom");
-
-	//require("./main.css");
-	var a = 1;
-
-
-	console.log(a);
-
-	/*ReactDOM.render(
-	    <h1>Hello World!</h1>,
-	    document.querySelector("#div1")
-	);*/
+	setTimeout(function () {
+	  console.log('time');
+	}, 2000); /**
+	           * Des
+	           * Created by luowei5 on 2016/9/21.
+	           * E-mail luowei5@jd.com
+	           * Update 2016/9/21
+	           */
 
 /***/ },
 /* 1 */
 /***/ function(module, exports) {
 
-	// removed by extract-text-webpack-plugin
+	"use strict";
+
+	/**
+	 * Des
+	 * Created by luowei5 on 2016/9/21.
+	 * E-mail luowei5@jd.com
+	 * Update 2016/9/21
+	 */
+
+	var sum = function sum(a, b) {
+	  return a + b;
+	};
+
+	console.log(sum(1, 2));
 
 /***/ }
 /******/ ]);

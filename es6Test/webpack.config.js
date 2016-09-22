@@ -10,7 +10,8 @@ module.exports = {
     entry: {
         //app: "./main.js",
         //es6Test: "./test.js",
-        classTest: "./class.js"
+        //classTest: "./class.js",
+        onlyLoad: './importES6.js'
     },
     output: {
         path: __dirname,
@@ -33,5 +34,6 @@ module.exports = {
         new webpack.ProvidePlugin({
             $: "jquery"
         })
-    ]
+    ],
+    watch: true
 };
