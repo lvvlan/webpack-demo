@@ -10,8 +10,8 @@ module.exports = {
     entry: {
         //app: "./main.js",
         //es6Test: "./test.js",
-        //classTest: "./class.js",
-        onlyLoad: './importES6.js'
+        classTest: "./class.js",
+        //onlyLoad: './importES6.js'
     },
     output: {
         path: __dirname,
@@ -25,7 +25,7 @@ module.exports = {
                 loader: "babel-loader",
                 exclude: /node_modules/,
                 query: {
-                    presets: ["es2015"]
+                    presets: ["es2015", "stage-2"]
                 }
             }
         ]

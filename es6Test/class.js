@@ -50,9 +50,14 @@ class Foo{
     static classMethod(){
         console.log(`这是一个静态方法，可以直接调用，不需要实例化~`);
     }
+
+    static testName = {
+        a: '类的静态属性还只是ES7的一个草案'
+    }
 }
 
 Foo.classMethod();
+console.log(Foo.testName);
 
 class Bar extends Foo {
     static classMethod(){

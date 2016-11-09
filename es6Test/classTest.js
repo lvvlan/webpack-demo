@@ -138,7 +138,13 @@
 	    return Foo;
 	}();
 
+	Foo.testName = {
+	    a: '类的静态属性还只是ES7的一个草案'
+	};
+
+
 	Foo.classMethod();
+	console.log(Foo.testName);
 
 	var Bar = function (_Foo) {
 	    _inherits(Bar, _Foo);
