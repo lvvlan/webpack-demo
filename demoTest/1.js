@@ -5,8 +5,8 @@
  * Update 2016/11/9
  */
 
-require('./common1');
-require('./common2');
+require('./common/a');
+require('./common/b');
 
 
 

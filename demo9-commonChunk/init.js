@@ -30,7 +30,7 @@
 /******/ 	// "0" means "already loaded"
 /******/ 	// Array means "loading", array contains callbacks
 /******/ 	var installedChunks = {
-/******/ 		3:0
+/******/ 		2:0
 /******/ 	};
 
 /******/ 	// The require function
@@ -76,7 +76,7 @@
 /******/ 			script.charset = 'utf-8';
 /******/ 			script.async = true;
 
-/******/ 			script.src = __webpack_require__.p + "" + chunkId + "." + ({"0":"bundle1","2":"bundle2"}[chunkId]||chunkId) + ".js";
+/******/ 			script.src = __webpack_require__.p + "" + chunkId + "." + ({"0":"bundle1","1":"bundle2"}[chunkId]||chunkId) + ".js";
 /******/ 			head.appendChild(script);
 /******/ 		}
 /******/ 	};
@@ -89,6 +89,43 @@
 
 /******/ 	// __webpack_public_path__
 /******/ 	__webpack_require__.p = "";
+
+/******/ 	// Load entry module and return exports
+/******/ 	return __webpack_require__(0);
 /******/ })
 /************************************************************************/
-/******/ ([]);
+/******/ ([
+/* 0 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__(1);
+
+
+/***/ },
+/* 1 */
+/***/ function(module, exports) {
+
+	/**
+	 * Des
+	 * Created by luowei5 on 2016/11/9.
+	 * E-mail luowei5@jd.com
+	 * Update 2016/11/9
+	 */
+	window.a = 'this is common1.js';
+	console.log('common1 is ready!');
+
+/***/ },
+/* 2 */
+/***/ function(module, exports) {
+
+	/**
+	 * Des
+	 * Created by luowei5 on 2016/11/9.
+	 * E-mail luowei5@jd.com
+	 * Update 2016/11/9
+	 */
+	window.b = 'this is common2.js';
+	console.log('common2 is ready!');
+
+/***/ }
+/******/ ]);

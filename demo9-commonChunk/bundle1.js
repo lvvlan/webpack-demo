@@ -1,4 +1,4 @@
-webpackJsonp([0,3],[
+webpackJsonp([0],[
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -9,25 +9,25 @@ webpackJsonp([0,3],[
 	 * Update 2016/11/9
 	 */
 
-	// require('./common1');
-	// require('./common2');
+	__webpack_require__(1);
+	__webpack_require__(2);
 
 
 
-	setTimeout(function (){
-	    __webpack_require__.e/* nsure */(1, function (require){
-	        __webpack_require__(1);
-	        __webpack_require__(2);
-
-	    });
-	}, 5000);
-	setTimeout(function (){
-	    __webpack_require__.e/* nsure */(1/* duplicate */, function (require){
-	        __webpack_require__(1);
-	        __webpack_require__(2);
-
-	    });
-	}, 8000);
+	// setTimeout(function (){
+	//     require.ensure([], function (require){
+	//         require('./common1');
+	//         require('./common2');
+	//
+	//     });
+	// }, 5000);
+	// setTimeout(function (){
+	//     require.ensure([], function (require){
+	//         require('./common1');
+	//         require('./common2');
+	//
+	//     });
+	// }, 8000);
 
 /***/ }
 ]);

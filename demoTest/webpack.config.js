@@ -12,14 +12,12 @@ var CommonsChunkPlugin = require("webpack/lib/optimize/CommonsChunkPlugin");
 
 module.exports = {
     entry: {
-        /*bundle1: "./main1.jsx",
-        bundle2: "./main2.jsx",*/
-        bundle1: './async1.js',
-        bundle2: './async2.js',
-        vendor: ['./common1']
+        bundle1: './1.js',
+        bundle2: './2.js',
+        vendor: ['./common/a']
     },
     output: {
-        path: "./",
+        path: "./build",
         filename: "[name].js"
     },
     module: {
@@ -36,7 +34,7 @@ module.exports = {
     },
     plugins: [
         new CommonsChunkPlugin({
-            name: 'vendor',
+            name: ['vendor'],
             filename: 'init.js'
         })
     ]
