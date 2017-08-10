@@ -1,4 +1,4 @@
-webpackJsonp([1],[
+webpackJsonp([1,2],[
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -26,6 +26,32 @@ webpackJsonp([1],[
 	//
 	//     });
 	// }, 8000);
+
+/***/ },
+/* 1 */
+/***/ function(module, exports) {
+
+	/**
+	 * Des
+	 * Created by luowei5 on 2016/11/9.
+	 * E-mail luowei5@jd.com
+	 * Update 2016/11/9
+	 */
+	window.a = 'this is common1.js';
+	console.log('common1 is ready!');
+
+/***/ },
+/* 2 */
+/***/ function(module, exports) {
+
+	/**
+	 * Des
+	 * Created by luowei5 on 2016/11/9.
+	 * E-mail luowei5@jd.com
+	 * Update 2016/11/9
+	 */
+	window.b = 'this is common2.js';
+	console.log('common2 is ready!');
 
 /***/ }
 ]);

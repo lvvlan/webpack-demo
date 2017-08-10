@@ -15,11 +15,11 @@ module.exports = {
         /*bundle1: "./main1.jsx",
         bundle2: "./main2.jsx",*/
         bundle1: './async1.js',
-        bundle2: './async2.js',
-        vendor: ['./common1']
+        bundle2: './async2.js'/*,
+        vendor: ['./common1']*/
     },
     output: {
-        path: "./",
+        path: "./dest",
         filename: "[name].js"
     },
     module: {
@@ -37,7 +37,14 @@ module.exports = {
     plugins: [
         new CommonsChunkPlugin({
             name: 'vendor',
-            filename: 'init.js'
-        })
+            //filename: 'init.js'
+            minChunks: function (module, count) {
+                console.log(module.resource);
+            }
+        })/*,
+        new CommonsChunkPlugin({
+            name: 'manifest',
+            chunks: ['vendor']
+        })*/
     ]
 };

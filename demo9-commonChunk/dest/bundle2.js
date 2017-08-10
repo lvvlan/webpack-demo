@@ -1,4 +1,4 @@
-webpackJsonp([0,2],[
+webpackJsonp([1,2,3],[
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -11,8 +11,6 @@ webpackJsonp([0,2],[
 
 	__webpack_require__(1);
 	__webpack_require__(2);
-
-
 
 	// setTimeout(function (){
 	//     require.ensure([], function (require){
